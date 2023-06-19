@@ -2,7 +2,7 @@ import multiprocessing
 
 # Archivo de entrada de la aplicación
 bind = '0.0.0.0:8080'
-wsgi_app = 'your_application.wsgi:app'
+wsgi_app = 'app.wsgi:app'
 
 # Configuración de Gunicorn
 workers = multiprocessing.cpu_count() * 2 + 1
